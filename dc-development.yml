@@ -1,0 +1,13 @@
+version: '3'
+services:
+  node:
+    volumes:
+      - .:/home/app
+  postgres:
+    image: postgres:10.1-alpine
+    volumes:
+      - ./docker/postgres/data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    env_file:
+      - ./docker/postgres/.env

@@ -1,0 +1,27 @@
+{
+  "name": "node-rest",
+  "version": "0.1.0",
+  "main": "app/index.js",
+  "repository": "https://github.com/matheusmariano/node-rest",
+  "author": "Matheus Mariano <vmatheus.mariano@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.32.6"
+  },
+  "devDependencies": {
+    "dotenv": "^5.0.0",
+    "jest": "^22.1.4",
+    "nodemon": "^1.14.12",
+    "supertest": "^3.0.0"
+  },
+  "scripts": {
+    "dev": "npx nodemon app/index.js",
+    "start": "node app/index.js",
+    "test": "npx jest"
+  }
+}
